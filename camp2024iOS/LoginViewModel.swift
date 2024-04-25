@@ -51,7 +51,7 @@ public protocol LoginRequestProtocol {
 
 public struct LoginRequest: LoginRequestProtocol {
     public func login(username: String, password: String, completion: @escaping (Result<LoginResponse, LoginError>) -> ()) {
-        guard let url = URL(string: "https://keyclock.cluster-dev.ioasys.com.br/realms/camp-ioasys-2024/protocol/openid-connect/token)") else {
+        guard let url = URL(string: "https://keyclock.cluster-dev.ioasys.com.br/realms/camp-ioasys-2024/protocol/openid-connect/token") else {
             completion(.failure(.urlNotFound))
             return
         }
@@ -60,7 +60,7 @@ public struct LoginRequest: LoginRequestProtocol {
         urlRequest.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         let parameters = ["client_id": "camp-ioasys-2024",
                           "client_secret": "BiKzHxr9ZoZRDlLjx6qG7QfnDhIoQdIf",
-                          "username": "username",
+                          "username": "camp@ioasys.com.br",
                           "password": "tph4hyk!BZC2txm*mcb",
                           "grant_type": "password"]
         
