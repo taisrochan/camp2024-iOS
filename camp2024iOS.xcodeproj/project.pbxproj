@@ -16,6 +16,8 @@
 		045037832BD81666008A777A /* camp2024iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045037822BD81666008A777A /* camp2024iOSUITestsLaunchTests.swift */; };
 		045037922BD82F49008A777A /* InputLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045037912BD82F48008A777A /* InputLoginView.swift */; };
 		045037942BD84096008A777A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045037932BD84096008A777A /* LoginViewModel.swift */; };
+		8F3710102BDB3E75004DD6CC /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37100F2BDB3E75004DD6CC /* LoginRequest.swift */; };
+		8F3710132BDB3EEB004DD6CC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3710122BDB3EEB004DD6CC /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		045037822BD81666008A777A /* camp2024iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camp2024iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		045037912BD82F48008A777A /* InputLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputLoginView.swift; sourceTree = "<group>"; };
 		045037932BD84096008A777A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8F37100F2BDB3E75004DD6CC /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		8F3710122BDB3EEB004DD6CC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,10 @@
 		045037642BD81665008A777A /* camp2024iOS */ = {
 			isa = PBXGroup;
 			children = (
+				8F3710112BDB3E80004DD6CC /* Login */,
 				045037652BD81665008A777A /* camp2024iOSApp.swift */,
-				045037672BD81665008A777A /* LoginView.swift */,
 				045037692BD81666008A777A /* Assets.xcassets */,
 				0450376B2BD81666008A777A /* Preview Content */,
-				045037932BD84096008A777A /* LoginViewModel.swift */,
 			);
 			path = camp2024iOS;
 			sourceTree = "<group>";
@@ -131,6 +134,17 @@
 				045037822BD81666008A777A /* camp2024iOSUITestsLaunchTests.swift */,
 			);
 			path = camp2024iOSUITests;
+			sourceTree = "<group>";
+		};
+		8F3710112BDB3E80004DD6CC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				045037672BD81665008A777A /* LoginView.swift */,
+				045037932BD84096008A777A /* LoginViewModel.swift */,
+				8F37100F2BDB3E75004DD6CC /* LoginRequest.swift */,
+				8F3710122BDB3EEB004DD6CC /* Models.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +280,8 @@
 				045037942BD84096008A777A /* LoginViewModel.swift in Sources */,
 				045037682BD81665008A777A /* LoginView.swift in Sources */,
 				045037662BD81665008A777A /* camp2024iOSApp.swift in Sources */,
+				8F3710132BDB3EEB004DD6CC /* Models.swift in Sources */,
+				8F3710102BDB3E75004DD6CC /* LoginRequest.swift in Sources */,
 				045037922BD82F49008A777A /* InputLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
